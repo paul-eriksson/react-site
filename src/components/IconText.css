@@ -1,0 +1,54 @@
+.icontext__container:hover > .icontext__text {
+  display: block !important;
+  -webkit-animation: fadeIn 2s;
+  animation: fadeIn 2s; }
+
+.icontext__container:hover > .icontext__image {
+  display: none !important; }
+
+.icontext__container {
+  position: relative;
+  text-align: center; }
+
+.icontext__image {
+  position: absolute;
+  top: 0;
+  -webkit-animation: fadeIn 2.5s;
+  animation: fadeIn 2.5s; }
+
+.icontext__text {
+  position: absolute;
+  top: 0;
+  margin: 0; }
+
+/*
+.icontext__container::after {
+    display:block;
+    content: attr(title);
+
+
+    visibility: hidden;
+}*/
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+@keyframes fadeIn {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+@-webkit-keyframes fadeOut {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0; } }
+
+@keyframes fadeOut {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0; } }

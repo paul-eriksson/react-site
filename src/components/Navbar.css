@@ -1,0 +1,102 @@
+.navbar {
+  text-align: center;
+  background-color: #222;
+  height: 60px;
+  color: white;
+  vertical-align: middle;
+  position: fixed;
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row; }
+  .navbar__child--right {
+    height: 100%;
+    margin-right: 20px; }
+  .navbar__icon {
+    float: left; }
+    .navbar__icon img {
+      animation: App-logo-spin infinite 20s linear;
+      width: 80px; }
+  .navbar__nav {
+    height: 100%; }
+    .navbar__nav * {
+      text-decoration: none;
+      color: #70FFFA;
+      font-size: 1em;
+      position: relative;
+      width: 60px;
+      text-transform: uppercase; }
+    .navbar__nav--wide {
+      width: 350px;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      /* a{
+                &:hover{
+                    opacity: 0.8;
+                }
+            }*/ }
+    .navbar__nav--narrow {
+      display: none; }
+  .navbar__navlinks--narrow {
+    position: absolute;
+    top: 70px;
+    right: 30px; }
+    .navbar__navlinks--narrow a {
+      color: orange;
+      display: block;
+      float: left;
+      clear: left;
+      padding: 0.5em 0;
+      font-size: 1em; }
+  .navbar__navicon {
+    float: right;
+    font-size: 1em; }
+    .navbar__navicon:hover {
+      cursor: pointer;
+      opacity: 0.8; }
+
+@media (max-width: 680px) {
+  .navbar__nav--wide {
+    display: none; }
+  .navbar__nav--narrow {
+    display: block; } }
+
+@media (max-width: 480px) {
+  .navbar__title {
+    display: none; } }
+
+@media (min-width: 955px) {
+  .navbar {
+    width: 60px;
+    position: fixed;
+    height: 100vh;
+    flex-direction: column; }
+    .navbar__child--right {
+      margin-bottom: 20px;
+      margin-right: 0; }
+    .navbar__icon img {
+      width: 100%; }
+    .navbar__nav * {
+      height: 30px;
+      vertical-align: middle; }
+    .navbar__nav--wide {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center; }
+      .navbar__nav--wide a:hover {
+        opacity: 0.8; }
+    .navbar__child--right {
+      height: 400px; } }
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg); }
+  to {
+    transform: rotate(360deg); } }
